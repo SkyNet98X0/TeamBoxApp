@@ -1,0 +1,23 @@
+:root{
+    --bg-color: #333333;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+button,
+textarea{
+    font-size: 1rem;
+    border: none;
+}
+
+html{
+    color-scheme: dark;
+    scroll-behavior: smooth;
+}
+
