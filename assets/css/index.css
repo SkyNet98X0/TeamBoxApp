@@ -1,23 +1,105 @@
-:root{
-    --bg-color: #333333;
-}
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-input,
-button,
-textarea{
-    font-size: 1rem;
-    border: none;
-}
+@import url('./config.css');
 
 html{
-    color-scheme: dark;
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #D5DEF5;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.container_header {
+    width: 100%;
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px; /* Reduce el espacio entre "Inicio" y los botones */
+}
+
+.menu nav ul li a {
+    color: var(--main_color-primary);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 10px;
+}
+
+.auth_buttons {
+    display: flex;
+    gap: 30px; /* Espacio entre "Iniciar sesión" y "Regístrate" */
+    margin-right: 30px; /* Reduce el espacio entre los botones y redes sociales */
+}
+
+.login_btn, .register_btn {
+    padding: 8px 15px;
+    background-color: var(--main_color_dark);
+    color: var(--color-text-optional2);
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.login_btn:hover, .register_btn:hover {
+    background-color: var(--color_text_light-secundary);
+}
+
+.container_cover{
+    padding-bottom: 100px;
+}
+
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text_cover {
+    width: 100%;
+    padding-right: 150px;
+}
+
+.text_cover h1 {
+    font-size: 50px;
+    color: var(--color_text-primary);
+}
+
+.text_cover p {
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color-text-optional1);
+}
+
+.section_cover{
+    width: 100%;
+}
+
+.section_cover img{
+    width: 550px;
+}

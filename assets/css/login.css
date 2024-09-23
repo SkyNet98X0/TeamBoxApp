@@ -1,0 +1,139 @@
+@import url('./config.css');
+
+body {
+    background: linear-gradient(116deg, #5585B5 10.27%, #6643B5 89.08%);
+    background-size: cover; /* Asegura que cubra toda la pantalla */
+    height: 100vh; /* Mantén el fondo en pantalla completa */
+    margin: 0;
+    padding: 0;
+}
+
+.container_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+
+}
+
+.box {
+    border-radius: 10px;
+    background: #79C2D0;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    box-shadow: 0 0 128px 0 rgb(0, 0, 0, 0.1),
+                0 32px 64px -48px rgb(0, 0, 0, 0.5);
+}
+
+.form-box {
+    width: 400px; /* Mantén el ancho si lo deseas fijo */
+    margin: 0px 10px; /* Mantén el margen si lo necesitas */
+    padding: 25px 25px;
+    background: #79C2D0;
+    border-radius: 10px;
+    box-shadow: 0 0 128px 0 rgb(0, 0, 0, 0.1),
+                0 32px 64px -48px rgb(0, 0, 0, 0.5);
+    /* Elimina la propiedad de height */
+}
+
+.form-box header {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 20px;
+    /* flex-direction: column; */
+}
+
+.form-box form .input {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos del label y input estén en columna */
+}
+
+.form-box form .input label {
+    font-size: 15px;
+    margin-bottom: 5px; /* Añade un pequeño margen entre el label y el input */
+}
+
+.form-box form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid #E5E6EA;
+
+}
+
+.btn {
+    width: 250px;
+    height: 35px;
+    background-color: var(--main_color_light);
+    color: var(--color-text-optional2);
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    opacity: 0.82;
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.links a {
+    color: var(--color-text-optional3);
+}
+
+.links a:hover {
+    color: var(--main_color_dark);
+}
+
+.field.remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+    font-size: 15px;
+}
+
+.field.remember-forgot input {
+    margin-right: 10px; /* Espacio entre checkbox y texto */
+}
+
+.forgot-link {
+    margin-left: auto; /* Empuja el enlace al extremo derecho */
+    color: var(--color-text-optional3);
+}
+
+.forgot-link:hover {
+    color: var(--main_color_dark);
+}
+
+.exit-container {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.exit-icon {
+    width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre la imagen */
+}
+
